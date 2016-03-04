@@ -1,6 +1,10 @@
 function place_raw_button() {
     var tree_items = $(".list_item");
-    console.log(tree_items);
+    var button = $("<button>Raw</button>");
+    for (var i in tree_items) {
+        var item = tree_items[i];
+        console.log(item);
+    }
 }
 
 function load_ipython_extension() {
