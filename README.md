@@ -14,7 +14,7 @@ project's PokeMon sponsor, Marshtop.
 5. Create a new file inside custom titled `custom.js`.
 6. Place the following inside `custom.js`
 ```
-$([Jupyter.events]).on("app_initialized.NotebookApp", function() {
+$([Jupyter.events]).on("app_initialized.DashboardApp", function() {
     Jupyter.load_extensions("raw-button");
 });
 ```
