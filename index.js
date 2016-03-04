@@ -3,7 +3,9 @@ function place_raw_button() {
     console.log(tree_items);
 }
 
-export function load_ipython_extension() {
+function load_ipython_extension() {
     console.log("Loading raw-button extension...");
     place_raw_button();
 }
+
+exports.load_ipython_extension = load_ipython_extension
