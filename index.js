@@ -1,10 +1,11 @@
 function place_raw_button() {
-    var tree_items = $(".list_item");
-    var button = $("<button>Raw</button>");
-    for (var i in tree_items) {
-        var item = tree_items[i];
-        console.log(item);
-    }
+    var navbar = $(".navbar-default .container-fluid .navbar-right").get(0);
+    $(navbar).append("<button class='btn btn-xs btn-default' id='raw-btn'>Raw</button>");
+    $('#raw-btn').bind("click", function() {
+        var filename = Jupyter.editor.file_path;
+        var raw_path = window.location.href.replace("edit", "files");
+        window.open(raw_path);
+    });
 }
 
 function load_ipython_extension() {
