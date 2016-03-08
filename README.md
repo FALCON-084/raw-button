@@ -22,3 +22,5 @@ $([Jupyter.events]).on("app_initialized.DashboardApp", function() {
 And that's it! Run `jupyter notebook` at the command line and enjoy your new feature!
 
 ## Usage Screencast
+
+![Raw Button Usage Screencast](http://g.recordit.co/6snU7Y5GRG.gif)
