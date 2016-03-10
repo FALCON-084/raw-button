@@ -17,7 +17,7 @@ ln -s $(python -c "import os; print(os.path.join(os.path.dirname(__import__('raw
 5. Create a new file inside custom titled `custom.js`.
 6. Place the following inside `custom.js`.
 ```
-Jupyter.utils.load_extensions("raw-button");
+Jupyter.utils.load_extensions("raw-button/raw-button");
 ```
 
 And that's it! Run `jupyter notebook` at the command line and enjoy your new feature!
